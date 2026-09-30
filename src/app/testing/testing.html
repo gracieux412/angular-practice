@@ -1,1 +1,41 @@
-<p>testing works!</p>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+    }
+    input, button {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    #remember {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    #remember label {
+        margin-left: 0.5rem;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }   
+</style>
+<form action="" method="post">
+    <h3>Login Test</h3>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <label for="remember">Remember me:</label>
+    <input type="checkbox" name="remember" id="remember">
+    <button type="submit">Login</button>
+</form>
+
